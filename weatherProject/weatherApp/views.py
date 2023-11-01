@@ -6,7 +6,7 @@ import datetime
 
 class IndexView(View):
     template_name = 'weatherApp/index.html'
-    appid = 'cb068b82e893e7d192e47cc4c16ff3b1'
+    appid = 'dae49390d96f20b320623219b22cc7a9'
     URL = 'https://api.openweathermap.org/data/2.5/weather'
 
     def get(self, request, *args, **kwargs):
