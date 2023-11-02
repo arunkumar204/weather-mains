@@ -16,9 +16,10 @@ class IndexView(View):
             'units': 'metric'
         }
 
-    API_KEY =  'AIzaSyDggQQ3GNdprWCmF-xyqld4CMTyp-V4PEQ'
+        API_KEY =  'AIzaSyDggQQ3GNdprWCmF-xyqld4CMTyp-V4PEQ'
 
-    SEARCH_ENGINE_ID = '30d121f3d98fa4c1c'
+        SEARCH_ENGINE_ID = '30d121f3d98fa4c1c'
+        
         r = requests.get(url=self.URL, params=PARAMS)
         res = r.json()
         description = res['weather'][0]['description']
